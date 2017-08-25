@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>De Lorenzis Guitars</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+
+<body>
+<header class="container">
+  <div class="row">
+    <h1 class="col-sm-4"><a href="index.html">Staccato</a></h1>
+
+     <nav class="col-sm-8 text-right">
+       <!-- <p><a href="index2.html">register</a></p> -->
+      <p><a href="http://www.guitar.by/forum/viewforum.php?f=42&sid=0cd5cdd9ac6efb91f1e07894c381288f" target="_blank">catalogue</a></p>
+      <p><a href="https://www.linkedin.com/in/yurydelorenzis1989" target="_blank">contact</a></p>
+    </nav>
+  </div>
+</header>
+ 
+
+<section class="jumbotron">
+ 	<div class="container">
+    	<div class="row text-center">
+         <h2>Custom Guitars &  Accessories</h2>
+               
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">See all</button>
+
+  				 <!-- Modal -->
+   			<div class="modal fade" id="myModal" role="dialog">
+      			<div class="modal-dialog">
+    
+     			 <!-- Modal content-->
+       				<div class="modal-content">
+         				 <div class="modal-header">
+         				 <button type="button" class="close" data-dismiss="modal">&times;</button>
+         				 <h4 class="modal-title"><strong>Nonono! Not Here!</strong></h4>
+       					 </div>
+      						    <div class="modal-body">
+          						<p>Its only Homework, you curious user! Click Catalogue link for more details.</p>
+    							</div>
+        							<div class="modal-footer">
+         							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       								</div>
+      							</div>
+         				</div>
+                    </div>  
+				</div>
+	        </div>
+</section>
+
+<h3> Subscribe to our Newsletter</h3>
+</br>
+</br>
+
+<div class="container">
+<div class="col-md-12">
+   <form>
+  
+      <div class="form-group">
+            <label for="first">First Name</label>
+            <input type="text" class="form-control" placeholder="First Name" id="first" required>
+      </div>
+        
+      <div class="form-group">
+            <label for="first">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" id="first" required>
+      </div>
+        
+      <div class="form-group">
+           <label for="email">Email:</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+    
+       <!--DROPDOWN-->
+
+       <div class="form-group">
+          <label for="dropdown">Preferred category</label>
+            <select class="form-control">
+              <option name="dropD" value="0" selected>All Categories</option>
+              <option name="dropD" value="1">Guitars</option>
+              <option name="dropD" value="2">Accessories</option>
+              <option name="dropD" value="3">Woodwork</option>
+              <option name="dropD" value="4">Gifts</option>
+            </select>
+        </div>
+
+    <!-- RADIOBUTTONS -->
+
+      <div class="form-group">
+           <label for="contact-preference">When is the best time of day to reach you?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                 <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+                </label>
+              </div>
+              </div>
+    
+    <!-- CHECKBOX -->
+
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Send me X-mas postcards</label>
+    </div>
+    <button type="submit" class="btn btn-default">I'm done</button>
+  </form>
+</div>
+</div>
+
+
+
+<!--Table-->
+<div class="col-md-12">
+        <div class="table-table">
+           <!-- <p style="color: #5f000b; font-size:25px "><b>Thank You!</b></p> -->
+
+            <table>
+
+                <tr>
+                    <th style="width: 50px"> № </th>
+                    <th style="width: 350px"> Field </th>
+                    <th style="width: 200px"> Your answer </th>
+                </tr>
+
+                <tr class="raw1">
+                    <td>1</td>
+                    <td>First Name</td>
+                    <td class="result1"></td>
+                </tr>
+
+                <tr class="raw2">
+                    <td>2</td>
+                    <td>Email</td>
+                    <td class="result2"></td>
+                </tr>
+
+                <tr class="raw3">
+                    <td>3</td>
+                    <td>Preferred category</td>
+                    <td class="result3"></td>
+                </tr>
+
+                <tr class="raw4">
+                    <td>4</td>
+                    <td>Preferred category</td>
+                    <td class="result4"></td>
+                </tr>
+
+                <tr class="raw5">
+                    <td>5</td>
+                    <td>Time to reach</td>
+                    <td class="result5"></td>
+                </tr>
+
+                <tr class="raw6">
+                    <td>6</td>
+                    <td>X-mas cards</td>
+                    <td class="result6"></td>
+                </tr>
+
+
+            </table>
+        </div>
+</div>
+
+
+<script src="JS/QuizJs.js"></script>
+
+
+
+
+
+<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2017 De Lorenzis</p>
+    <ul class="col-sm-8">
+      <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+      <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+      <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
+
+   
