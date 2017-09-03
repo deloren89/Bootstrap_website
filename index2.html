@@ -65,31 +65,39 @@
    <form>
   
       <div class="form-group">
+        <div class = "first">
             <label for="first">First Name</label>
             <input type="text" class="form-control" placeholder="First Name" id="first" required>
+        </div>
       </div>
         
       <div class="form-group">
-            <label for="first">Last Name</label>
-            <input type="text" class="form-control" placeholder="Last Name" id="first" required>
+        <div class = "last">
+            <label for="last">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" id="last" required>
+        </div>
       </div>
         
       <div class="form-group">
+        <div class = "email">
            <label for="email">Email:</label>
            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
       </div>
     
        <!--DROPDOWN-->
 
        <div class="form-group">
+        <div class = "dropdown"
           <label for="dropdown">Preferred category</label>
             <select class="form-control">
-              <option name="dropD" value="0" selected>All Categories</option>
-              <option name="dropD" value="1">Guitars</option>
-              <option name="dropD" value="2">Accessories</option>
-              <option name="dropD" value="3">Woodwork</option>
-              <option name="dropD" value="4">Gifts</option>
+              <option name="drop" value="All Categories" selected>All Categories</option>
+              <option name="drop" value="Guitars">Guitars</option>
+              <option name="drop" value="Accessories">Accessories</option>
+              <option name="drop" value="Woodwork">Woodwork</option>
+              <option name="drop" value="Gifts">Gifts</option>
             </select>
+           </div>
         </div>
 
     <!-- RADIOBUTTONS -->
@@ -98,13 +106,13 @@
            <label for="contact-preference">When is the best time of day to reach you?</label>
               <div class="radio">
                 <label>
-                  <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+                  <input type="radio" name="contact-preference" id="contact-preference" value="Morning" checked>Morning
                 </label>
               </div>
 
               <div class="radio">
                 <label>
-                 <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+                 <input type="radio" name="contact-preference" id="contact-preference" value="Evening" checked>Evening
                 </label>
               </div>
               </div>
@@ -116,13 +124,13 @@
         <label for="checkbox">Send me additional info about:</label>
        
         <div class="checkbox">
-      	<label><input type="checkbox" value="">Discounts</label>	
+      	<label><input type="checkbox" name="additional" value="Discounts">Discounts</label>	
       	</div>
       	<div class="checkbox">
-      	<label><input type="checkbox" value="">New openings</label>
+      	<label><input type="checkbox" name="additional" value="New openings">New openings</label>
       	</div>
       	<div class="checkbox">
-      	<label><input type="checkbox" value="">New features</label>
+      	<label><input type="checkbox" name="additional" value="New features">New features</label>
       	</div>
 
     </div>
@@ -139,8 +147,10 @@
 <br>
 
 <!--Table-->
-<div class="col-md-6">
+<div class = "container">
+<div class="form-group">
         <div class="table-table">
+          
            <!-- <p style="color: #5f000b; font-size:25px "><b>Thank You!</b></p> -->
 
             <table>
@@ -159,13 +169,13 @@
 
                 <tr class="raw2">
                     <td>2</td>
-                    <td>Email</td>
+                    <td>Last Name</td>
                     <td class="result2"></td>
                 </tr>
 
                 <tr class="raw3">
                     <td>3</td>
-                    <td>Preferred category</td>
+                    <td>Email</td>
                     <td class="result3"></td>
                 </tr>
 
@@ -183,12 +193,16 @@
 
                 <tr class="raw6">
                     <td>6</td>
-                    <td>X-mas cards</td>
+                    <td>Additional Info</td>
                     <td class="result6"></td>
                 </tr>
 
 
             </table>
+
+           
+          </div>
+        </div>
         </div>
 </div>
 
