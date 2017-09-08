@@ -1,3 +1,3 @@
 # hello-World
-##This is the responsive website built with Bootstrap
-###some edits
+##This is my first responsive website built with Bootstrap
+
