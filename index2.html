@@ -9,6 +9,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+<script>
+function validateForm() {
+    var x = document.forms["email"]["email"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+
 </head>
 
 
@@ -30,6 +42,7 @@
  	<div class="container">
     	<div class="row text-center">
          <h2>Custom Guitars &  Accessories</h2>
+         <br/>
                
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">See all</button>
 
@@ -66,22 +79,22 @@
   
       <div class="form-group">
         <div class = "first">
-            <label for="first">First Name</label>
+            <label for="first">First Name *</label>
             <input type="text" class="form-control" placeholder="First Name" id="first" required>
         </div>
       </div>
         
       <div class="form-group">
         <div class = "last">
-            <label for="last">Last Name</label>
+            <label for="last">Last Name *</label>
             <input type="text" class="form-control" placeholder="Last Name" id="last" required>
         </div>
       </div>
         
-      <div class="form-group">
+      <div class="form-group" name = "email">
         <div class = "email">
-           <label for="email">Email:</label>
-           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+           <label for="email">Email *</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  onsubmit="return validateForm()" required>
         </div>
       </div>
     
@@ -138,13 +151,15 @@
 
 
     <button input type='submit'class="btn btn-default" >Subscribe</button>
-     
+    <br/>
+    <br/>
+    <br/>
+     <p><h6>Fields marked with an * are required</h5></p>
   </form>
 </div>
 </div>
 
-<br>
-<br>
+
 
 <!--Table-->
 <div class = "container">
@@ -223,6 +238,9 @@
     </ul>
   </div>
 </footer>
+
+
+
 </body>
 </html>
 

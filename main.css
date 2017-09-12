@@ -36,7 +36,7 @@ a:visited {
 color:#000000;
 }
 a:hover {
-color:#937d62;
+color:#847058;
 text-decoration:none
 }
 a:active {
@@ -46,6 +46,13 @@ color:#000000;
 h3{
   text-align: center;
 }
+
+h6{
+ font-family: 'Roboto', sans-serif;
+ color:#847058; 
+}
+
+
 
 
 .jumbotron {
@@ -79,6 +86,10 @@ section .row img {
   margin: 0 0 30px;
 }
 
+.col-sm-6 {
+  margin: 0 0 30px;
+}
+
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
@@ -103,10 +114,22 @@ section .row img {
     display: none;
 }
 
+.blockquote, .blockquote-reverse{
+  font-weight: 300;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.blockquote-footer{
+ font-size: 14px;
+}
 footer {
   font-size: 12px;
   padding: 20px 0;
 }
+
 
 footer .col-sm-8 {
   display: flex;
@@ -134,7 +157,3 @@ h4.modal-title{
    font-family: 'Roboto', sans-serif;
    color: #333;
 }
-
-
-
-
